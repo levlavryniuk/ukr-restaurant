@@ -3,6 +3,10 @@
 	import MenuToggle from './MenuToggle.svelte';
 
 	let isBurgerOpen = $state(false);
+
+	function onclick() {
+		isBurgerOpen = false;
+	}
 </script>
 
 <header
@@ -12,7 +16,26 @@
 	{#if isBurgerOpen}
 		<div
 			transition:slide
-			class="absolute left-0 top-20 h-screen w-full bg-slate-900/80 backdrop-blur-md"
-		></div>
+			style:opacity={isBurgerOpen ? 1 : 0}
+			class="absolute left-0 top-20 h-fit w-full rounded-b-full bg-slate-900/80 pb-20 backdrop-blur-md duration-500"
+		>
+			<ul class="header-list">
+				<li><a {onclick} href="/">ГОЛОВНА</a></li>
+				<li><a {onclick} href="menu">МЕНЮ ТА БАР</a></li>
+				<li><a {onclick} href="/benkety">БЕНКЕТИ</a></li>
+				<li><a {onclick} href="/dostavka">ДОСТАВКА</a></li>
+				<li><a {onclick} href="/keyteryng">КЕЙТЕРИНГ</a></li>
+				<li><a {onclick} href="/contacts">КОНТАКТИ</a></li>
+			</ul>
+		</div>
 	{/if}
 </header>
+
+<style>
+	.header-list {
+		@apply flex flex-col items-center justify-center gap-5;
+		li {
+			@apply text-2xl font-medium text-background/90 hover:text-background/70;
+		}
+	}
+</style>
