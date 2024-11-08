@@ -5,7 +5,6 @@ export const actions = {
   default: async (e) => {
     const form = await e.request.formData();
     const name = form.get("name");
-    const email = form.get("email");
     const phone = form.get("phone");
     const date = form.get("date");
     const time = form.get("time");
@@ -16,7 +15,6 @@ export const actions = {
     try {
       await supabase.from("reservations").insert({
         name,
-        email,
         phone,
         date,
         time,

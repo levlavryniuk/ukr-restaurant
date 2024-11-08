@@ -18,12 +18,6 @@
 			class="w-full rounded border border-gray-300 px-4 py-2 focus:outline-none"
 		/>
 		<input
-			type="email"
-			name="email"
-			placeholder="Email"
-			class="w-full rounded border border-gray-300 px-4 py-2 focus:outline-none"
-		/>
-		<input
 			type="date"
 			name="date"
 			placeholder="Дата візиту"
