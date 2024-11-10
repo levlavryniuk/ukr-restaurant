@@ -21,8 +21,8 @@
 		>
 			<ul class="header-list">
 				<li><a {onclick} href="/">ГОЛОВНА</a></li>
-				<li><a {onclick} href="menu">МЕНЮ ТА БАР</a></li>
-				<li><a {onclick} href="/benkety">БЕНКЕТИ</a></li>
+				<li><a {onclick} href="/menu">МЕНЮ ТА БАР</a></li>
+				<li><a {onclick} href="/posulgy">ПОСЛУГИ</a></li>
 				<li><a {onclick} href="/dostavka">ДОСТАВКА</a></li>
 				<li><a {onclick} href="/keyteryng">КЕЙТЕРИНГ</a></li>
 				<li><a {onclick} href="/contacts">КОНТАКТИ</a></li>

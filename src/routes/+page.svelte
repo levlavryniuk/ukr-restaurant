@@ -25,16 +25,18 @@
 		<h2 class="text-5xl">МЕНЮ РЕСТОРАНУ</h2>
 		<div class="mt-4 flex justify-center gap-4">
 			<button
-				class="rounded border border-primary px-4 py-2 text-primary hover:bg-primary hover:text-white"
-			>
-				Сніданок
-			</button>
-			<button
+				onclick={() => {
+					window.open('/src/lib/menu.pdf', '_blank');
+				}}
 				class="rounded border border-primary px-4 py-2 text-primary hover:bg-primary hover:text-white"
 			>
 				Головні страви
 			</button>
 		</div>
+	</section>
+	<section class="flex flex-col items-center bg-primary py-16 text-white">
+		<p class="text-center text-4xl font-semibold">МИ ПРАЦЮЄМО</p>
+		<p class="text-center text-xl">Кожен день з 12.00 по 22.00</p>
 	</section>
 
 	<!-- Reservation Form Section -->

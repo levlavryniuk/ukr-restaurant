@@ -10,6 +10,7 @@ export const actions = {
     const time = form.get("time");
     const notes = form.get("notes");
     const people = form.get("people")
+    const tableOption = form.get("tableOption")
 
 
     try {
@@ -20,6 +21,7 @@ export const actions = {
         time,
         people,
         notes,
+        tableOption
       })
 
       return { success: true, message: "Reservation added successfully" };

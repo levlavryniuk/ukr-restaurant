@@ -5,7 +5,7 @@
 <footer class="flex h-fit w-full flex-col gap-9 bg-slate-900 py-10 text-background">
 	<div class="flex flex-col gap-2">
 		<p class="text-text text-center text-3xl">ЗАВІТАЙТЕ</p>
-		<p class="text-center text-xl">м. Київ, пр-т. Відрадний 22</p>
+		<p class="text-center text-xl">02105 Україна, м Київ вул. Шумского 3</p>
 	</div>
 	<div class="flex flex-col gap-2">
 		<p class="text-text text-center text-3xl">ВПОДОБАЙТЕ</p>
