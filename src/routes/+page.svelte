@@ -25,9 +25,6 @@
 		<h2 class="text-5xl">МЕНЮ РЕСТОРАНУ</h2>
 		<div class="mt-4 flex justify-center gap-4">
 			<button
-				onclick={() => {
-					window.open('/src/lib/menu.pdf', '_blank');
-				}}
 				class="rounded border border-primary px-4 py-2 text-primary hover:bg-primary hover:text-white"
 			>
 				Головні страви
